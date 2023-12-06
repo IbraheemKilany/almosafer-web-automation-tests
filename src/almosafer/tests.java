@@ -39,9 +39,21 @@ public class tests {
 		
 		String curency =driver.findElement(By.xpath("//button[normalize-space()='SAR']")).getText();
 		Assert.assertEquals(curency, "SAR");
-			
+	}
+	@Test()
+	public void checkcontractnumber() {
+	WebElement contractnumber= driver.findElement(By.cssSelector("a[class='sc-hUfwpO bWcsTG'] strong"));
+	
+	String Currentcontractnumber=contractnumber.getText();
+	Assert.assertEquals(Currentcontractnumber, "+966554400000");
+		
+		
 		
 	}
+	
+	
+	
+	
 	
 		
 		
