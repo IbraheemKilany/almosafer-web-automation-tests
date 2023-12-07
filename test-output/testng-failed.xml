@@ -5,8 +5,8 @@
     <classes>
       <class name="almosafer.tests">
         <methods>
-          <include name="checkcontractnumber"/>
           <include name="beforetest"/>
+          <include name="Hotels"/>
           <include name="aftertest"/>
         </methods>
       </class> <!-- almosafer.tests -->
