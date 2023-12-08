@@ -113,10 +113,10 @@ public class tests {
 			searchk.click();
 		
 			
-			WebElement selectorelement = driver.findElement(By.xpath("//select[@class='sc-dDojKJ kgmORR']"));
+			WebElement selectorelement =driver.findElement(By.xpath("//select[@data-testid='HotelSearchBox__ReservationSelect_Select']"));
 			Select selector=new Select(selectorelement);
 			selector.selectByIndex(ranen.nextInt(2));
-			Thread.sleep(3000);
+			Thread.sleep(10000);
 		} else {
 			WebElement hotelen = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
 			hotelen.click();
@@ -128,14 +128,14 @@ public class tests {
 					"//li[@class='phbroq-5 dbvRBC AutoComplete__ListItem AutoComplete__ListItem--highlighted AutoComplete__ListItem ']"));
 			firstelement.click();
 			WebElement searchk = driver.findElement(By.xpath(
-					"//button[@class='sc-jTzLTM eJkYKb sc-1vkdpp9-6 iKBWgG js-HotelSearchBox__SearchButton btn btn-primary btn-block']"));
+					"//button[@class='sc-jTzLTM hQpNle sc-1vkdpp9-6 iKBWgG js-HotelSearchBox__SearchButton btn btn-primary btn-block']"));
 			searchk.click();
 		}
 		
-		WebElement selectorelement = driver.findElement(By.xpath("//select[@class='sc-dDojKJ kgmORR']"));
+		WebElement selectorelement = driver.findElement(By.xpath("//select[@data-testid='HotelSearchBox__ReservationSelect_Select']"));
 		Select selector=new Select(selectorelement);
 		selector.selectByIndex(ranen.nextInt(2));
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 	}
 
 	@AfterTest
